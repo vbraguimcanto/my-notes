@@ -1,0 +1,37 @@
+
+Definições de Filas
+
+    - A mensagem é gerada por um produtor.
+    - A mensagem é enviada a um consumidor.
+
+
+ACK
+
+    - Sinaliza o servidor do RabbitMQ que recebeu a mensagem.
+    - A partir deste momento, a responsabilidade é do script consumidor.
+    - Ao setar o auto_ack com 'False', o script consumidor deverá avisar que recebeu o script.
+
+EXCHANGE
+
+    - A função do exchange é rotear para a fila responsável.
+
+EXCHANGE FANOUT
+
+    - Encaminha todas as mensagens para todas as filas.
+
+EXCHANGE DIRECT
+
+    - Cria regras de roteamento para filas.
+
+EXCHANGE TOPIC
+
+    - Posso criar regras com coringas. Por exemplo, enviar para uma fila X tudo que iniciar com A.*
+
+CONCEITOS NA CRIAÇÃO DE EXCHANGES
+
+    - DURABILITY: Quando o servidor cair, o exchange continuará criado?
+    - AUTO DELETE: Quando não tiver fila.
+
+VIRTUALHOSTS
+
+    - Vários VHOSTS no mesmo servidor. Cada um com as suas filas e exchanges.

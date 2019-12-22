@@ -34,4 +34,4 @@ CONCEITOS NA CRIAÇÃO DE EXCHANGES
 
 VIRTUALHOSTS
 
-    - Vários VHOSTS no mesmo servidor. Cada um com as suas filas e exchanges.
+    - Vários VHOSTS no mesmo servidor. Cada um com as suas filas e exchanges.  
